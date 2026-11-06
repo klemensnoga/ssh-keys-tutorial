@@ -1,0 +1,33 @@
+# Example ~/.ssh/config for Cyfronet clusters
+# Copy to ~/.ssh/config (Windows: C:\Users\<name>\.ssh\config)
+# Replace "plguser" with your PLGrid login.
+# Permissions: chmod 600 ~/.ssh/config
+# Guide: README.md and 03-config-file.md
+
+# Lets this file work on Linux and Windows too (UseKeychain exists only on macOS)
+IgnoreUnknown UseKeychain
+
+# --- Specific hosts first: the first value found for each option wins ---
+
+Host ares
+    HostName ares.cyfronet.pl
+    User plguser
+    IdentityFile ~/.ssh/id_ed25519_ares
+    IdentitiesOnly yes
+
+Host athena
+    HostName athena.cyfronet.pl
+    User plguser
+    IdentityFile ~/.ssh/id_ed25519_athena
+    IdentitiesOnly yes
+
+# --- Defaults for all hosts: keep this block last ---
+
+Host *
+    # Keep-alive: probe every 60 s, drop after 3 unanswered probes
+    ServerAliveInterval 60
+    ServerAliveCountMax 3
+    # Load keys into the agent on first use
+    AddKeysToAgent yes
+    # macOS only: remember the passphrase in the Keychain
+    UseKeychain yes
