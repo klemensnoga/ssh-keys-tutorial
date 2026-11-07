@@ -1,8 +1,8 @@
-# 05 A different key for athena.cyfronet.pl
+# 06 A different key for athena.cyfronet.pl
 
-[Agenda](README.md) | Previous: [04 SSH agent](04-ssh-agent.md) | Next: [06 Register key](06-register-key-portal.md)
+[Agenda](README.md) | Previous: [05 SSH agent](05-ssh-agent.md) | Next: [07 Register key](07-register-key-portal.md)
 
-**Time:** 0:23-0:26 | **Exercise 5**
+**Time:** 0:24-0:26 | **Exercise 5**
 
 ## Why a separate key
 
@@ -31,7 +31,7 @@
 3. Load it into the agent: `ssh-add ~/.ssh/id_ed25519_athena`
 4. Check the settings: `ssh -G athena | grep -i identityfile`
 
-You can test the connection after the public keys are registered in [06 Register key](06-register-key-portal.md).
+You can test the connection after the public keys are registered in [07 Register key](07-register-key-portal.md).
 
 ---
-[Agenda](README.md) | Previous: [04 SSH agent](04-ssh-agent.md) | Next: [06 Register key](06-register-key-portal.md)
+[Agenda](README.md) | Previous: [05 SSH agent](05-ssh-agent.md) | Next: [07 Register key](07-register-key-portal.md)

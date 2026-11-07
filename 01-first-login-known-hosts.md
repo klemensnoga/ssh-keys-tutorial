@@ -2,7 +2,7 @@
 
 [Agenda](README.md) | Next: [02 Generate keys](02-generate-keys.md)
 
-**Time:** 0:00-0:05
+**Time:** 0:00-0:04
 
 ## What happens on the first connection
 

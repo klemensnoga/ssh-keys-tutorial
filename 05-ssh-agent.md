@@ -1,8 +1,8 @@
-# 04 The SSH agent: setup and persistence
+# 05 The SSH agent: setup and persistence
 
-[Agenda](README.md) | Previous: [03 Config file](03-config-file.md) | Next: [05 Second key](05-second-key-athena.md)
+[Agenda](README.md) | Previous: [04 Config file](04-config-file.md) | Next: [06 Second key](06-second-key-athena.md)
 
-**Time:** 0:16-0:23 | **Exercise 4**
+**Time:** 0:18-0:24 | **Exercise 4**
 
 ## What the agent does
 
@@ -16,7 +16,7 @@ ssh-add -l                          # list loaded keys
 ssh-add -D                          # remove all keys from the agent
 ```
 
-`AddKeysToAgent yes` in the config loads a key automatically the first time it is used. See [03 Config file](03-config-file.md) and [config.example](config.example).
+`AddKeysToAgent yes` in the config loads a key automatically the first time it is used. See [04 Config file](04-config-file.md) and [config.example](config.example).
 
 The agent lives in memory, so after a reboot it is empty unless you set up persistence, described below.
 
@@ -95,4 +95,4 @@ Run **Pageant**, right-click its tray icon, choose *Add Key*, and select the `.p
 - `AddKeysToAgent confirm` asks for confirmation on each use if you want extra control.
 
 ---
-[Agenda](README.md) | Previous: [03 Config file](03-config-file.md) | Next: [05 Second key](05-second-key-athena.md)
+[Agenda](README.md) | Previous: [04 Config file](04-config-file.md) | Next: [06 Second key](06-second-key-athena.md)

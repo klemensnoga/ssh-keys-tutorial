@@ -1,6 +1,6 @@
-# 08 Q&A and backup topics for advanced questions
+# 09 Q&A and backup topics for advanced questions
 
-[Agenda](README.md) | Previous: [07 Best practices](07-best-practices-troubleshooting.md)
+[Agenda](README.md) | Previous: [08 Best practices](08-best-practices-troubleshooting.md)
 
 **Time:** 0:30-1:00. The first 15 minutes are hands-on help; the rest is for advanced questions.
 
@@ -65,4 +65,4 @@ PuTTYgen: *Conversions* menu, import the OpenSSH key and save as `.ppk`, or expo
 `ssh-add --apple-load-keychain` reloads all Keychain keys into the agent.
 
 ---
-[Agenda](README.md) | Previous: [07 Best practices](07-best-practices-troubleshooting.md)
+[Agenda](README.md) | Previous: [08 Best practices](08-best-practices-troubleshooting.md)

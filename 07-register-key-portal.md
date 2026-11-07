@@ -1,6 +1,6 @@
-# 06 Register the public key at portal.plgrid.pl
+# 07 Register the public key at portal.plgrid.pl
 
-[Agenda](README.md) | Previous: [05 Second key](05-second-key-athena.md) | Next: [07 Best practices](07-best-practices-troubleshooting.md)
+[Agenda](README.md) | Previous: [06 Second key](06-second-key-athena.md) | Next: [08 Best practices](08-best-practices-troubleshooting.md)
 
 **Time:** 0:26-0:30 | **Exercise 6**
 
@@ -32,7 +32,7 @@
 
 ## If it fails
 
-Go to [07 Best practices and troubleshooting](07-best-practices-troubleshooting.md). Typical causes: key not yet propagated, wrong `User`, wrong key file, wrong permissions.
+Go to [08 Best practices and troubleshooting](08-best-practices-troubleshooting.md). Typical causes: key not yet propagated, wrong `User`, wrong key file, wrong permissions.
 
 ---
-[Agenda](README.md) | Previous: [05 Second key](05-second-key-athena.md) | Next: [07 Best practices](07-best-practices-troubleshooting.md)
+[Agenda](README.md) | Previous: [06 Second key](06-second-key-athena.md) | Next: [08 Best practices](08-best-practices-troubleshooting.md)

@@ -15,6 +15,16 @@ chmod 700 ~/.ssh && chmod 600 ~/.ssh/id_ed25519_*
 ```
 RSA (3072+ bits) only as a fallback. Never share the private key.
 
+## 2b. Copy the public key to Ares, then log in with it
+```
+ssh-copy-id -i ~/.ssh/id_ed25519_ares.pub plguser@ares.cyfronet.pl
+# manual alternative (append, never overwrite):
+scp ~/.ssh/id_ed25519_ares.pub plguser@ares.cyfronet.pl:~/
+ssh plguser@ares.cyfronet.pl 'mkdir -p ~/.ssh && chmod 700 ~/.ssh && cat ~/id_ed25519_ares.pub >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys && rm ~/id_ed25519_ares.pub'
+ssh -i ~/.ssh/id_ed25519_ares -o IdentitiesOnly=yes plguser@ares.cyfronet.pl
+```
+Windows PowerShell has no `ssh-copy-id`: use the manual method. On PLGrid the portal may be the supported way, see section 5.
+
 ## 3. Config (`~/.ssh/config`, first match wins, `Host *` last)
 ```
 Host ares

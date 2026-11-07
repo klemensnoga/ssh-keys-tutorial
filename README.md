@@ -19,23 +19,25 @@ Quick-start materials: [one-page handout](handout.md) and [example SSH config](c
 
 | Time | Topic | Exercise | Guide |
 |---|---|---|---|
-| 0:00-0:05 | First login and the `known_hosts` file | Observe the prompt, find the new entry | [01 First login](01-first-login-known-hosts.md) |
-| 0:05-0:10 | Generating keys and which algorithm | **Ex. 1:** generate an Ed25519 key pair for Ares | [02 Generate keys](02-generate-keys.md) |
-| 0:10-0:16 | Config file basics: multiple keys, keep-alive | **Ex. 2-3:** config for ares.cyfronet.pl, add keep-alive | [03 Config file](03-config-file.md) |
-| 0:16-0:23 | SSH agent and making it persistent (macOS, Linux, Windows) | **Ex. 4:** start the agent, make it persistent | [04 SSH agent](04-ssh-agent.md) |
-| 0:23-0:26 | A different key for athena.cyfronet.pl | **Ex. 5:** second key and config block | [05 Second key](05-second-key-athena.md) |
-| 0:26-0:30 | Wrap-up: register the public key at portal.plgrid.pl, best practices, troubleshooting | **Ex. 6:** add public keys, test login | [06 Register key](06-register-key-portal.md), [07 Best practices](07-best-practices-troubleshooting.md) |
+| 0:00-0:04 | First login and the `known_hosts` file | Observe the prompt, find the new entry | [01 First login](01-first-login-known-hosts.md) |
+| 0:04-0:08 | Generating keys and which algorithm | **Ex. 1:** generate an Ed25519 key pair for Ares | [02 Generate keys](02-generate-keys.md) |
+| 0:08-0:13 | Copy the public key to the remote host (`ssh-copy-id` and manual `scp`), first key login | **Ex. 1b:** install the key on Ares and log in with it | [03 Copy public key](03-copy-public-key.md) |
+| 0:13-0:18 | Config file basics: multiple keys, keep-alive | **Ex. 2-3:** config for ares.cyfronet.pl, add keep-alive | [04 Config file](04-config-file.md) |
+| 0:18-0:24 | SSH agent and making it persistent (macOS, Linux, Windows) | **Ex. 4:** start the agent, make it persistent | [05 SSH agent](05-ssh-agent.md) |
+| 0:24-0:26 | A different key for athena.cyfronet.pl | **Ex. 5:** second key and config block | [06 Second key](06-second-key-athena.md) |
+| 0:26-0:30 | Wrap-up: register the public key at portal.plgrid.pl, best practices, troubleshooting | **Ex. 6:** add public keys, test login | [07 Register key](07-register-key-portal.md), [08 Best practices](08-best-practices-troubleshooting.md) |
 
 ## Part 2: Q&A and backup (30 min)
 
 | Time | Activity |
 |---|---|
 | 0:30-0:45 | Hands-on help: finish exercises, fix individual problems (Windows agent, portal registration, permissions) |
-| 0:45-1:00 | Advanced questions, see [08 Backup topics](08-qa-backup-topics.md) |
+| 0:45-1:00 | Advanced questions, see [09 Backup topics](09-qa-backup-topics.md) |
 
 ## Exercise overview
 
 1. Generate a key pair with an elliptic-curve algorithm (Ed25519)
+   - **1b.** Copy the public key to Ares (`ssh-copy-id` or `scp`) and log in with it
 2. Prepare a config file for ares.cyfronet.pl using the generated key
 3. Add keep-alive
 4. Start the agent and make it persistent
@@ -44,6 +46,7 @@ Quick-start materials: [one-page handout](handout.md) and [example SSH config](c
 
 ## Facilitator notes
 
+- Time is very tight with the copy-key step included (about 5 minutes). Consider shortening the config and agent sections, or moving the manual `scp` method to the Q&A part.
 - Time is tight: share the [example config](config.example) so attendees can paste it and edit the username.
 - Ask Windows attendees at the start which option they use (PowerShell, WSL, PuTTY) and split help during Q&A.
 - Keep a spare Ed25519 test key pair for anyone blocked at the portal step.
@@ -54,11 +57,12 @@ Quick-start materials: [one-page handout](handout.md) and [example SSH config](c
 
 - [01 First login and known_hosts](01-first-login-known-hosts.md)
 - [02 Generating keys](02-generate-keys.md)
-- [03 Config file](03-config-file.md)
-- [04 SSH agent](04-ssh-agent.md)
-- [05 Second key for Athena](05-second-key-athena.md)
-- [06 Register key at portal.plgrid.pl](06-register-key-portal.md)
-- [07 Best practices and troubleshooting](07-best-practices-troubleshooting.md)
-- [08 Q&A backup topics](08-qa-backup-topics.md)
+- [03 Copy public key and first key login](03-copy-public-key.md)
+- [04 Config file](04-config-file.md)
+- [05 SSH agent](05-ssh-agent.md)
+- [06 Second key for Athena](06-second-key-athena.md)
+- [07 Register key at portal.plgrid.pl](07-register-key-portal.md)
+- [08 Best practices and troubleshooting](08-best-practices-troubleshooting.md)
+- [09 Q&A backup topics](09-qa-backup-topics.md)
 - [Handout (one page)](handout.md)
 - [Example SSH config](config.example)

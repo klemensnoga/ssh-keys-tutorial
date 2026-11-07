@@ -1,6 +1,6 @@
-# 07 Best practices and troubleshooting
+# 08 Best practices and troubleshooting
 
-[Agenda](README.md) | Previous: [06 Register key](06-register-key-portal.md) | Next: [08 Backup topics](08-qa-backup-topics.md)
+[Agenda](README.md) | Previous: [07 Register key](07-register-key-portal.md) | Next: [09 Backup topics](09-qa-backup-topics.md)
 
 ## Best practices
 
@@ -28,7 +28,7 @@ Work top to bottom:
    ```
 
    Exclude the `.pub` files from the second command if you like; they can stay readable.
-5. `ssh-add -l` shows whether the agent holds the key. If it cannot connect to an agent, start one (see [04 SSH agent](04-ssh-agent.md)).
+5. `ssh-add -l` shows whether the agent holds the key. If it cannot connect to an agent, start one (see [05 SSH agent](05-ssh-agent.md)).
 6. Check the network: VPN, firewall, correct host name.
 
 ## Common problems
@@ -43,7 +43,7 @@ Work top to bottom:
 | `UNPROTECTED PRIVATE KEY FILE` (Windows or Linux) | Other users can read the key. Restrict permissions. |
 | `Connection timed out` | Network or VPN problem, wrong host name. |
 | `Could not open a connection to your authentication agent` | Agent not running or `SSH_AUTH_SOCK` not set. |
-| Session freezes after idle time | Add keep-alive (see [03](03-config-file.md)). |
+| Session freezes after idle time | Add keep-alive (see [03](04-config-file.md)). |
 | Key works in PowerShell but not in WSL (or reverse) | Separate `~/.ssh` folders and agents. Install the matching public key and set up an agent in each. |
 | Config seems ignored | First match wins. Check that specific `Host` blocks come before `Host *`, and use `ssh -G`. |
 | PuTTY key rejected by OpenSSH | Different formats (`.ppk` vs OpenSSH). Convert with PuTTYgen. |
@@ -55,4 +55,4 @@ Work top to bottom:
 - Make a backup before experiments: `cp ~/.ssh/config ~/.ssh/config.bak`.
 
 ---
-[Agenda](README.md) | Previous: [06 Register key](06-register-key-portal.md) | Next: [08 Backup topics](08-qa-backup-topics.md)
+[Agenda](README.md) | Previous: [07 Register key](07-register-key-portal.md) | Next: [09 Backup topics](09-qa-backup-topics.md)

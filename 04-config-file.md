@@ -1,8 +1,8 @@
-# 03 The SSH config file: basics
+# 04 The SSH config file: basics
 
-[Agenda](README.md) | Previous: [02 Generate keys](02-generate-keys.md) | Next: [04 SSH agent](04-ssh-agent.md)
+[Agenda](README.md) | Previous: [03 Copy public key](03-copy-public-key.md) | Next: [05 SSH agent](05-ssh-agent.md)
 
-**Time:** 0:10-0:16 | **Exercises 2 and 3**
+**Time:** 0:13-0:18 | **Exercises 2 and 3**
 
 ## Why a config file
 
@@ -52,7 +52,7 @@ A probe goes out every 60 seconds. After 3 unanswered probes the session is clos
 
 ## Multiple keys
 
-One block per destination, each with its own `IdentityFile` and `IdentitiesOnly yes` (see [05 Second key](05-second-key-athena.md)).
+One block per destination, each with its own `IdentityFile` and `IdentitiesOnly yes` (see [06 Second key](06-second-key-athena.md)).
 
 ## Check the result
 
@@ -64,4 +64,4 @@ ssh ares               # connect with the alias
 A complete ready-to-paste file is in [config.example](config.example).
 
 ---
-[Agenda](README.md) | Previous: [02 Generate keys](02-generate-keys.md) | Next: [04 SSH agent](04-ssh-agent.md)
+[Agenda](README.md) | Previous: [03 Copy public key](03-copy-public-key.md) | Next: [05 SSH agent](05-ssh-agent.md)
