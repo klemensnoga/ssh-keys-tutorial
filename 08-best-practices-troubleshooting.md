@@ -42,6 +42,7 @@ Work top to bottom:
 | `Bad owner or permissions on .../config` | Fix file permissions (600) and ownership. |
 | `UNPROTECTED PRIVATE KEY FILE` (Windows or Linux) | Other users can read the key. Restrict permissions. |
 | `Connection timed out` | Network or VPN problem, wrong host name. |
+| `ssh_exchange_identification: read: Connection reset by peer` (newer OpenSSH: `kex_exchange_identification: ...`) | The server drops the connection before login starts. A common cause is too many failed login attempts from your IP address: a protection mechanism such as fail2ban then blocks that IP for a while. Stop retrying, fix the cause of the failures (wrong `User`, wrong key, a script retrying in a loop), and wait for the block to expire. After checking your setup, try connecting to the server from a client with a different public IP address. If the problem persists, contact the support team and give them your public IP address. |
 | `Could not open a connection to your authentication agent` | Agent not running or `SSH_AUTH_SOCK` not set. |
 | Session freezes after idle time | Add keep-alive (see [04](04-config-file.md)). |
 | Key works in PowerShell but not in WSL (or reverse) | Separate `~/.ssh` folders and agents. Install the matching public key and set up an agent in each. |
