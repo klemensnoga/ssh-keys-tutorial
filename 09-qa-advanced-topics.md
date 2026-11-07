@@ -14,6 +14,33 @@ ssh -N -o ExitOnForwardFailure=yes -L 8888:node042:8888 ares
 
 Then open `http://localhost:8888`. Run the service on a compute node through the scheduler, not on the login node. Use `-R` and `-D` only where site policy allows.
 
+### Agent forwarding and its risks
+
+`ssh -A` or `ForwardAgent yes` lets the remote host use your local agent. Root on the remote host can use it while you are connected. Prefer `ProxyJump`, or a dedicated key for Git on the cluster.
+
+### ProxyJump (reaching nodes behind a login host)
+
+```
+Host node-*
+    HostName %h.example.internal
+    User plguser
+    ProxyJump ares
+```
+
+No agent forwarding is needed, and your key stays on your laptop.
+
+### File transfer and remote editing
+
+`scp`, `rsync -av --partial`, `sftp`, VS Code Remote-SSH using the aliases from your config.
+
+### Persistent sessions
+
+`tmux` or `screen` keeps shells alive across disconnects.
+
+### FIDO2 hardware keys
+
+`ssh-keygen -t ed25519-sk` ties the key to a hardware token. Requires a recent OpenSSH on both sides and server support; check site policy first.
+
 ### Connection reuse (ControlMaster)
 
 ```
@@ -55,33 +82,6 @@ Until the time runs out, later `ssh`, `scp`, `rsync` and git connections to the 
 **Exemption at JSC:** keys stored on FIDO hardware tokens (see [FIDO2 hardware keys](#fido2-hardware-keys)) and SSH certificates skip the TOTP step. Other sites may handle this differently.
 
 Source: [JSC JUPITER access documentation, MFA with TOTP](https://apps.fz-juelich.de/jsc/hps/jupiter/access.html#mfa-with-totp)
-
-### Agent forwarding and its risks
-
-`ssh -A` or `ForwardAgent yes` lets the remote host use your local agent. Root on the remote host can use it while you are connected. Prefer `ProxyJump`, or a dedicated key for Git on the cluster.
-
-### ProxyJump (reaching nodes behind a login host)
-
-```
-Host node-*
-    HostName %h.example.internal
-    User plguser
-    ProxyJump ares
-```
-
-No agent forwarding is needed, and your key stays on your laptop.
-
-### File transfer and remote editing
-
-`scp`, `rsync -av --partial`, `sftp`, VS Code Remote-SSH using the aliases from your config.
-
-### Persistent sessions
-
-`tmux` or `screen` keeps shells alive across disconnects.
-
-### FIDO2 hardware keys
-
-`ssh-keygen -t ed25519-sk` ties the key to a hardware token. Requires a recent OpenSSH on both sides and server support; check site policy first.
 
 ### RSA vs Ed25519 compatibility
 
