@@ -43,7 +43,7 @@ Work top to bottom:
 | `UNPROTECTED PRIVATE KEY FILE` (Windows or Linux) | Other users can read the key. Restrict permissions. |
 | `Connection timed out` | Network or VPN problem, wrong host name. |
 | `Could not open a connection to your authentication agent` | Agent not running or `SSH_AUTH_SOCK` not set. |
-| Session freezes after idle time | Add keep-alive (see [03](04-config-file.md)). |
+| Session freezes after idle time | Add keep-alive (see [04](04-config-file.md)). |
 | Key works in PowerShell but not in WSL (or reverse) | Separate `~/.ssh` folders and agents. Install the matching public key and set up an agent in each. |
 | Config seems ignored | First match wins. Check that specific `Host` blocks come before `Host *`, and use `ssh -G`. |
 
