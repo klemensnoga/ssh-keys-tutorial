@@ -51,9 +51,10 @@ macOS: also add `UseKeychain yes` under `Host *` and `IgnoreUnknown UseKeychain`
 | Linux | `eval "$(ssh-agent -s)"`; persist with the desktop keyring, systemd user unit or `keychain` |
 | Windows PowerShell | Admin: `Set-Service ssh-agent -StartupType Automatic; Start-Service ssh-agent`, then `ssh-add $env:USERPROFILE\.ssh\id_ed25519_ares` |
 | WSL | Own agent: use `keychain`, keep keys in WSL `~/.ssh` |
-| PuTTY | Pageant, shortcut with `.ppk` in the Startup folder |
 
 Check: `ssh-add -l`
+
+PuTTY is not covered and we discourage using it: use PowerShell (OpenSSH) or WSL.
 
 ## 5. Register the public key
 Copy `cat ~/.ssh/id_ed25519_ares.pub` (and the athena one) into your account at **portal.plgrid.pl**. Wait a few minutes, then `ssh ares` and `ssh athena`.

@@ -56,10 +56,6 @@ Repeated logins and transfers reuse one connection. Not supported by the Windows
 
 Ed25519 is supported by all current OpenSSH versions; very old clients or servers may need RSA (3072+ bits).
 
-### Converting between OpenSSH and PuTTY formats
-
-PuTTYgen: *Conversions* menu, import the OpenSSH key and save as `.ppk`, or export in OpenSSH format.
-
 ### Reloading keys on macOS after reboot
 
 `ssh-add --apple-load-keychain` reloads all Keychain keys into the agent.

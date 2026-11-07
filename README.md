@@ -10,10 +10,12 @@ Hands-on tutorial for new PLGrid/Cyfronet users: log in to **ares.cyfronet.pl** 
 Attendees need:
 
 - a PLGrid account with access to Ares and Athena (login of the form `plgXXXX`)
-- a terminal: macOS Terminal, Linux terminal, or Windows PowerShell / WSL / PuTTY
+- a terminal: macOS Terminal, Linux terminal, or Windows PowerShell or WSL (see the note on PuTTY below)
 - OpenSSH client available (`ssh -V` prints a version)
 
 Quick-start materials: [one-page handout](handout.md) and [example SSH config](config.example).
+
+> **Disclaimer: PuTTY.** We discourage using PuTTY for this tutorial and for Cyfronet access. It is not covered here: it uses its own key format and tools, so the commands and configuration in these materials do not apply to it, and we do not support it. Windows users should use the built-in OpenSSH client in PowerShell, or WSL.
 
 ## Part 1: Tutorial (30 min)
 
@@ -48,7 +50,7 @@ Quick-start materials: [one-page handout](handout.md) and [example SSH config](c
 
 - Time is very tight with the copy-key step included (about 5 minutes). Consider shortening the config and agent sections, or moving the manual `scp` method to the Q&A part.
 - Time is tight: share the [example config](config.example) so attendees can paste it and edit the username.
-- Ask Windows attendees at the start which option they use (PowerShell, WSL, PuTTY) and split help during Q&A.
+- Ask Windows attendees at the start which option they use (PowerShell or WSL) and split help during Q&A.
 - Keep a spare Ed25519 test key pair for anyone blocked at the portal step.
 - Before the session, verify against current Cyfronet/PLGrid documentation: the published host fingerprints, the exact portal menu for SSH keys, and any key-type requirements. These were not checked when this material was written.
 - Send the [handout](handout.md) afterward.

@@ -58,7 +58,7 @@ cat ~/.ssh/id_ed25519_ares.pub
 ssh-keygen -lf ~/.ssh/id_ed25519_ares.pub
 ```
 
-**Windows (PowerShell):** the same command works; the folder is `C:\Users\<name>\.ssh\`. Create it first if needed: `mkdir $env:USERPROFILE\.ssh`. **PuTTY users:** use PuTTYgen with EdDSA (Ed25519) and copy the text from the "Public key for pasting into OpenSSH authorized_keys file" box.
+**Windows (PowerShell):** the same command works; the folder is `C:\Users\<name>\.ssh\`. Create it first if needed: `mkdir $env:USERPROFILE\.ssh`.
 
 ---
 [Agenda](README.md) | Previous: [01 First login](01-first-login-known-hosts.md) | Next: [03 Copy public key](03-copy-public-key.md)

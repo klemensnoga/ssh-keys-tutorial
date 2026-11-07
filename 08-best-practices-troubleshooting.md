@@ -46,7 +46,6 @@ Work top to bottom:
 | Session freezes after idle time | Add keep-alive (see [03](04-config-file.md)). |
 | Key works in PowerShell but not in WSL (or reverse) | Separate `~/.ssh` folders and agents. Install the matching public key and set up an agent in each. |
 | Config seems ignored | First match wins. Check that specific `Host` blocks come before `Host *`, and use `ssh -G`. |
-| PuTTY key rejected by OpenSSH | Different formats (`.ppk` vs OpenSSH). Convert with PuTTYgen. |
 
 ## Debugging the config file
 

@@ -77,9 +77,9 @@ WSL has its own separate agent and does not see the Windows one. Options:
 - Call Windows `ssh.exe` from WSL to use the Windows agent.
 - Bridge to the Windows agent with a helper such as npiperelay or wsl2-ssh-agent; follow that tool's own instructions.
 
-### PuTTY
+### Disclaimer: PuTTY
 
-Run **Pageant**, right-click its tray icon, choose *Add Key*, and select the `.ppk` file. For persistence, put a shortcut to `pageant.exe` with the `.ppk` path as an argument in the Startup folder (`shell:startup`). PuTTY and OpenSSH key formats differ; PuTTYgen's *Conversions* menu converts between them.
+We discourage using PuTTY for this tutorial and for Cyfronet access. It uses its own key format and its own tools, so none of the commands, config file settings or agent steps here apply to it, and we do not provide support for it. Use the built-in OpenSSH client in PowerShell or WSL, as described above.
 
 ## Exercise 4
 
