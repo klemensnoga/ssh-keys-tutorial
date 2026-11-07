@@ -1,21 +1,10 @@
-# 09 Q&A and backup topics for advanced questions
+# 09 Q&A and advanced topics
 
 [Agenda](README.md) | Previous: [08 Best practices](08-best-practices-troubleshooting.md)
 
 **Time:** 0:30-1:00. The first 15 minutes are hands-on help; the rest is for advanced questions.
 
-## Prepared topics
-
-### ProxyJump (reaching nodes behind a login host)
-
-```
-Host node-*
-    HostName %h.example.internal
-    User plguser
-    ProxyJump ares
-```
-
-No agent forwarding is needed, and your key stays on your laptop.
+## Advanced topics
 
 ### SSH tunnels (Jupyter, TensorBoard)
 
@@ -65,13 +54,22 @@ Until the time runs out, later `ssh`, `scp`, `rsync` and git connections to the 
 
 **Exemption at JSC:** keys stored on FIDO hardware tokens (see [FIDO2 hardware keys](#fido2-hardware-keys)) and SSH certificates skip the TOTP step. Other sites may handle this differently.
 
-> Verify before the session: whether PLGrid/Cyfronet requires or offers TOTP for Ares and Athena, and in which portal it is set up. This was not checked when this material was written.
-
 Source: [JSC JUPITER access documentation, MFA with TOTP](https://apps.fz-juelich.de/jsc/hps/jupiter/access.html#mfa-with-totp)
 
 ### Agent forwarding and its risks
 
 `ssh -A` or `ForwardAgent yes` lets the remote host use your local agent. Root on the remote host can use it while you are connected. Prefer `ProxyJump`, or a dedicated key for Git on the cluster.
+
+### ProxyJump (reaching nodes behind a login host)
+
+```
+Host node-*
+    HostName %h.example.internal
+    User plguser
+    ProxyJump ares
+```
+
+No agent forwarding is needed, and your key stays on your laptop.
 
 ### File transfer and remote editing
 
