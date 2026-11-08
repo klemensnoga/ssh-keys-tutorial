@@ -10,7 +10,10 @@
 - The server checks that you hold the private key without it ever being sent.
 - Protect the private key with a **passphrase**, so a stolen file is useless on its own.
 
-![SSH key pair: the private key stays on the laptop, the public key is copied once to the server; at login the server sends a challenge, the laptop signs it with the private key, and the server checks the signature with the public key](images/ssh-key-pair.svg)
+<picture>
+  <source srcset="images/ssh-key-pair.svg" type="image/svg+xml">
+  <img src="images/ssh-key-pair.png" width="760" alt="SSH key pair: the private key stays on the laptop, the public key is copied once to the server; at login the server sends a challenge, the laptop signs it with the private key, and the server checks the signature with the public key">
+</picture>
 
 ## Which algorithm
 

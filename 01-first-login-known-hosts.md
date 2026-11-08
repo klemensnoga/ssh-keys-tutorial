@@ -6,7 +6,10 @@
 
 ## How SSH works
 
-![How an SSH connection is set up: connect, check the host key, key exchange, authentication, encrypted session](images/ssh-connection.svg)
+<picture>
+  <source srcset="images/ssh-connection.svg" type="image/svg+xml">
+  <img src="images/ssh-connection.png" width="760" alt="How an SSH connection is set up: connect, check the host key, key exchange, authentication, encrypted session">
+</picture>
 
 1. Your SSH client connects to the server on port 22.
 2. The server proves its identity with its **host key**. Your client checks it against `~/.ssh/known_hosts` (this file is the topic of this step).
