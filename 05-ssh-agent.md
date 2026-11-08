@@ -16,7 +16,7 @@ ssh-add -l                          # list loaded keys
 ssh-add -D                          # remove all keys from the agent
 ```
 
-`AddKeysToAgent yes` in the config loads a key automatically the first time it is used. See [04 Config file](04-config-file.md) and [config.example](config.example).
+`AddKeysToAgent yes` in the config loads a key automatically the first time it is used. See [04 Config file](04-config-file.md) and [config.example](ares/config.example).
 
 The agent lives in memory, so after a reboot it is empty unless you set up persistence, described below.
 

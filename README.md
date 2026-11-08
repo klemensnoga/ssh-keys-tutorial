@@ -13,7 +13,7 @@ Attendees need:
 - a terminal: macOS Terminal, Linux terminal, or Windows PowerShell or WSL (see the note on PuTTY below)
 - OpenSSH client available (`ssh -V` prints a version)
 
-Quick-start materials: [one-page handout](handout.md) and [example SSH config](config.example).
+Quick-start materials: [one-page handout](ares/handout.md) and [example SSH config](ares/config.example).
 
 > **Disclaimer: PuTTY.** We discourage using PuTTY for this tutorial and for Cyfronet access. It is not covered here: it uses its own key format and tools, so the commands and configuration in these materials do not apply to it, and we do not support it. Windows users should use the built-in OpenSSH client in PowerShell, or WSL.
 
@@ -47,6 +47,7 @@ Quick-start materials: [one-page handout](handout.md) and [example SSH config](c
 - [07 Register key at portal.plgrid.pl](07-register-key-portal.md)
 - [08 Best practices and troubleshooting](08-best-practices-troubleshooting.md)
 - [09 Q&A and advanced topics](09-qa-advanced-topics.md)
-- [Handout (one page)](handout.md)
-- [Example SSH config](config.example)
+- [Handout (one page)](ares/handout.md), also as [PDF](ares/handout.pdf)
+- [Example SSH config](ares/config.example)
+- [README for Ares](ares/README.Ares.md): where to find these materials and the example config
 - [Trainer notes](trainer-notes.md)

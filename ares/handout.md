@@ -1,6 +1,6 @@
 # SSH Keys for Cyfronet: One-Page Handout
 
-Full guide: [README](README.md) | Example config: [config.example](config.example)
+Full guide: [README](../README.md) | Example config: [config.example](config.example)
 
 ## 1. First login and known_hosts
 - `ssh plguser@ares.cyfronet.pl`: check the fingerprint against the official docs, then `yes`.

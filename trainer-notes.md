@@ -15,11 +15,11 @@
 ## Facilitator notes
 
 - Time is very tight with the copy-key step included (about 5 minutes). Consider shortening the config and agent sections, or moving the manual `scp` method to the Q&A part.
-- Time is tight: share the [example config](config.example) so attendees can paste it and edit the username.
+- Time is tight: share the [example config](ares/config.example) so attendees can paste it and edit the username.
 - Ask Windows attendees at the start which option they use (PowerShell or WSL) and split help during Q&A.
 - Keep a spare Ed25519 test key pair for anyone blocked at the portal step.
 - Before the session, verify against current Cyfronet/PLGrid documentation: the published host fingerprints, the exact portal menu for SSH keys, and any key-type requirements. These were not checked when this material was written.
-- Send the [handout](handout.md) afterward.
+- Send the [handout](ares/handout.md) afterward.
 
 ---
 [Agenda](README.md)

@@ -61,7 +61,7 @@ ssh -G ares            # print the final settings SSH will use
 ssh ares               # connect with the alias
 ```
 
-A complete ready-to-paste file is in [config.example](config.example).
+A complete ready-to-paste file is in [config.example](ares/config.example).
 
 ---
 [Agenda](README.md) | Previous: [03 Copy public key](03-copy-public-key.md) | Next: [05 SSH agent](05-ssh-agent.md)
