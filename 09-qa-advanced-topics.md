@@ -9,10 +9,10 @@
 ### SSH tunnels (Jupyter, TensorBoard)
 
 ```
-ssh -N -o ExitOnForwardFailure=yes -L 8888:node042:8888 ares
+ssh -N -o ExitOnForwardFailure=yes -L 8888:ac0042:8888 ares
 ```
 
-Then open `http://localhost:8888`. Run the service on a compute node through the scheduler, not on the login node. Use `-R` and `-D` only where site policy allows.
+Then open `http://localhost:8888`. Run the service on a compute node through the Slurm scheduler, not on the login node. Use `-R` and `-D` only where site policy allows.
 
 ### Agent forwarding and its risks
 
@@ -21,8 +21,8 @@ Then open `http://localhost:8888`. Run the service on a compute node through the
 ### ProxyJump (reaching nodes behind a login host)
 
 ```
-Host node-*
-    HostName %h.example.internal
+Host ac*
+    HostName %h
     User plguser
     ProxyJump ares
 ```
