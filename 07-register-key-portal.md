@@ -4,7 +4,8 @@
 
 **Time:** 0:26-0:30 | **Exercise 6**
 
-> Verify before the session: the exact menu names in the portal and any key-type requirements were not checked when this material was written. Confirm them in the current PLGrid/Cyfronet documentation.
+[Portal PLGrid](https://portal.plgrid.pl/) provides centralized service to manage all user SSH keys. User can upload his/her keys  
+ in [Profile & affiliations](https://portal.plgrid.pl/users/affiliations) tab, in [SSH keys](https://portal.plgrid.pl/users/ssh_keys) section. For detailed instructions see [PLGrid documentation](https://guide.plgrid.pl/en/portal-for-science/profile/manage#ssh-keys).
 
 ## Steps
 
@@ -18,7 +19,7 @@
    On Windows PowerShell use `type $env:USERPROFILE\.ssh\id_ed25519_ares.pub`.
 
 2. Log in to **https://portal.plgrid.pl** with your PLGrid account.
-3. Open your account/profile and find the section for SSH keys.
+3. Open your "Profile & affiliations" and find the section for [SSH keys](https://portal.plgrid.pl/users/ssh_keys).
 4. Add each **public** key (`.pub`) with a recognizable name, for example `laptop-ares` and `laptop-athena`. Never paste the private key.
 5. Wait a few minutes if needed for the key to propagate to the clusters.
 6. Test:
