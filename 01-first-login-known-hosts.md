@@ -4,6 +4,16 @@
 
 **Time:** 0:00-0:04
 
+## How SSH works
+
+![How an SSH connection is set up: connect, check the host key, key exchange, authentication, encrypted session](images/ssh-connection.svg)
+
+1. Your SSH client connects to the server on port 22.
+2. The server proves its identity with its **host key**. Your client checks it against `~/.ssh/known_hosts` (this file is the topic of this step).
+3. Both sides agree on a secret session key, so everything after this point is encrypted.
+4. You prove who you are: with an SSH key (next steps) or a password, plus a one-time code on sites that use MFA.
+5. You get a shell, or transfer files with `scp` and `rsync`.
+
 ## What happens on the first connection
 
 ```
