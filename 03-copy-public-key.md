@@ -14,8 +14,6 @@ The server keeps the public keys allowed to log in as you in one file on the rem
 
 Copying your public key means **appending its single line** to that file on the remote host. Only the `.pub` file is ever copied. The private key stays on your machine.
 
-> Check before the session: on PLGrid systems the supported way to register keys may be the portal (see [07 Register key](07-register-key-portal.md)), and `authorized_keys` may be managed centrally and overwritten, or password login may be disabled so the methods below cannot be used for a first login. This was not verified. Confirm in the current Cyfronet/PLGrid documentation which method works on Ares.
-
 You need a way to log in once without the new key (for example your account password or another method your site allows), because the key is not installed yet.
 
 ## Method 1: `ssh-copy-id` (recommended)

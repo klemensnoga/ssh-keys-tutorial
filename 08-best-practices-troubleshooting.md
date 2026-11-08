@@ -55,4 +55,4 @@ Work top to bottom:
 - Make a backup before experiments: `cp ~/.ssh/config ~/.ssh/config.bak`.
 
 ---
-[Agenda](README.md) | Previous: [07 Register key](07-register-key-portal.md) | Next: [09 Backup topics](09-qa-backup-topics.md)
+[Agenda](README.md) | Previous: [07 Register key](07-register-key-portal.md) | Next: [09 Advanced topics](09-qa-backup-topics.md)

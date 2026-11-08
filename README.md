@@ -3,7 +3,7 @@
 Hands-on tutorial for new PLGrid/Cyfronet users: log in to **ares.cyfronet.pl** and **athena.cyfronet.pl** with SSH keys, keep sessions alive, and manage keys with an agent.
 
 - **Part 1: Tutorial** (30 min), live demo with attendees following on their own laptops
-- **Part 2: Q&A and backup topics** (30 min), hands-on help plus advanced questions
+- **Part 2: Q&A and advanced topics** (30 min), hands-on help plus advanced questions
 
 ## Before the session
 
@@ -29,12 +29,12 @@ Quick-start materials: [one-page handout](handout.md) and [example SSH config](c
 | 0:24-0:26 | A different key for athena.cyfronet.pl | **Ex. 5:** second key and config block | [06 Second key](06-second-key-athena.md) |
 | 0:26-0:30 | Wrap-up: register the public key at portal.plgrid.pl, best practices, troubleshooting | **Ex. 6:** add public keys, test login | [07 Register key](07-register-key-portal.md), [08 Best practices](08-best-practices-troubleshooting.md) |
 
-## Part 2: Q&A and backup (30 min)
+## Part 2: Q&A and advanced topics (30 min)
 
 | Time | Activity |
 |---|---|
 | 0:30-0:45 | Hands-on help: finish exercises, fix individual problems (Windows agent, portal registration, permissions) |
-| 0:45-1:00 | Advanced questions, see [09 Backup topics](09-qa-backup-topics.md) |
+| 0:45-1:00 | Advanced questions, see [09 Q&A and advanced topics](09-qa-advanced-topics.md) |
 
 ## Contents
 
@@ -46,7 +46,7 @@ Quick-start materials: [one-page handout](handout.md) and [example SSH config](c
 - [06 Second key for Athena](06-second-key-athena.md)
 - [07 Register key at portal.plgrid.pl](07-register-key-portal.md)
 - [08 Best practices and troubleshooting](08-best-practices-troubleshooting.md)
-- [09 Q&A backup topics](09-qa-backup-topics.md)
+- [09 Q&A and advanced topics](09-qa-advanced-topics.md)
 - [Handout (one page)](handout.md)
 - [Example SSH config](config.example)
 - [Trainer notes](trainer-notes.md)

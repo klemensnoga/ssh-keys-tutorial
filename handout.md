@@ -23,7 +23,7 @@ scp ~/.ssh/id_ed25519_ares.pub plguser@ares.cyfronet.pl:~/
 ssh plguser@ares.cyfronet.pl 'mkdir -p ~/.ssh && chmod 700 ~/.ssh && cat ~/id_ed25519_ares.pub >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys && rm ~/id_ed25519_ares.pub'
 ssh -i ~/.ssh/id_ed25519_ares -o IdentitiesOnly=yes plguser@ares.cyfronet.pl
 ```
-Windows PowerShell has no `ssh-copy-id`: use the manual method. On PLGrid the portal may be the supported way, see section 5.
+Windows PowerShell has no `ssh-copy-id`: use the manual method. You can upload it to the  [PLGrid portal](https://portal.plgrid.pl/users/ssh_keys), see section 5.
 
 ## 3. Config (`~/.ssh/config`, first match wins, `Host *` last)
 ```
@@ -57,7 +57,7 @@ Check: `ssh-add -l`
 PuTTY is not covered and we discourage using it: use PowerShell (OpenSSH) or WSL.
 
 ## 5. Register the public key
-Copy `cat ~/.ssh/id_ed25519_ares.pub` (and the athena one) into your account at **portal.plgrid.pl**. Wait a few minutes, then `ssh ares` and `ssh athena`.
+Copy `cat ~/.ssh/id_ed25519_ares.pub` (and the Athena one) into your account at **[portal.plgrid.pl](https://portal.plgrid.pl/users/ssh_keys)**. Wait a few minutes, then `ssh ares` and `ssh athena`.
 
 ## 6. Best practices
 Passphrase on every key, one key per service, rotate and remove old keys, `ForwardAgent` only for trusted hosts, keep screen lock and disk encryption on, verify host fingerprints.
