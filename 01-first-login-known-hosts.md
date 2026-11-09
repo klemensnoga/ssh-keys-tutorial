@@ -47,19 +47,10 @@ Login nodes are taken from the [Cyfronet supercomputer documentation](https://do
 | **Athena** | `athena.cyfronet.pl` | ED25519 | `SHA256:4XJ7YOvwU/HeGk7sPsr3BoRIJkPzALTj0jHb3sqEm+Q` |
 | | | ECDSA | `SHA256:j59Kgh38DeK0ctQvzekvzjPVnNpKAHewJ1FcdLcmmUk` |
 | | | RSA | `SHA256:QcXTKo9cW+oLUdEGu7r4WMqduolpeM0YPbzzI3rJfkc` |
-| **Helios** | `login01.helios.cyfronet.pl` | ED25519 | `SHA256:YX2hlk2eYYYfYrakjzdk7syklFfXZWAwAX63l2+hArE` |
+| **Helios** | `helios.cyfronet.pl` | ED25519 | `SHA256:YX2hlk2eYYYfYrakjzdk7syklFfXZWAwAX63l2+hArE` |
 | | | ECDSA | `SHA256:IVtGssOg+U2r39B6noMwU6uxyfPXfMUU35hELVV5dFM` |
 | | | RSA | `SHA256:RNDNbKY4mKNDIi6w2iaz1Sqwctlb4OBfqjnjnYHG0oI` |
 
-`helios.cyfronet.pl` points to the same machine as `login01.helios.cyfronet.pl` and has the same keys.
-
-These fingerprints were collected with `ssh-keyscan` on 2026-11-08; the Cyfronet documentation does not publish them. You can produce the same list yourself:
-
-```
-ssh-keyscan ares.cyfronet.pl 2>/dev/null | ssh-keygen -lf -
-```
-
-`ssh-keyscan` only shows what the server sends over your current network, so it is no proof on its own. It is useful for comparing with this table from a different network.
 
 ## Look at the file
 
