@@ -1,6 +1,6 @@
 # 06 A different key for athena.cyfronet.pl
 
-[Agenda](README.md) | Previous: [05 SSH agent](05-ssh-agent.md) | Next: [07 Register key](07-register-key-portal.md)
+[Agenda](README.md) | Previous: [05 SSH agent](05-ssh-agent.md) | Next: [07 Best practices](07-best-practices-troubleshooting.md)
 
 **Time:** 0:24-0:26 | **Exercise 5**
 
@@ -30,8 +30,8 @@
 
 3. Load it into the agent: `ssh-add ~/.ssh/id_ed25519_athena`
 4. Check the settings: `ssh -G athena | grep -i identityfile`
-
-You can test the connection after the public keys are registered in [07 Register key](07-register-key-portal.md).
+5. Register the public key `~/.ssh/id_ed25519_athena.pub` in the PLGrid portal with a name such as `laptop-athena`, as in [03 Register public key, Method 1](03-copy-public-key.md#method-1-plgrid-portal-recommended-on-plgrid).
+6. After a few minutes, test: `ssh athena`
 
 ---
-[Agenda](README.md) | Previous: [05 SSH agent](05-ssh-agent.md) | Next: [07 Register key](07-register-key-portal.md)
+[Agenda](README.md) | Previous: [05 SSH agent](05-ssh-agent.md) | Next: [07 Best practices](07-best-practices-troubleshooting.md)

@@ -1,6 +1,6 @@
-# 08 Best practices and troubleshooting
+# 07 Best practices and troubleshooting
 
-[Agenda](README.md) | Previous: [07 Register key](07-register-key-portal.md) | Next: [09 Advanced topics](09-qa-advanced-topics.md)
+[Agenda](README.md) | Previous: [06 Second key](06-second-key-athena.md) | Next: [08 Advanced topics](08-qa-advanced-topics.md)
 
 ## Best practices
 
@@ -55,4 +55,4 @@ Work top to bottom:
 - Make a backup before experiments: `cp ~/.ssh/config ~/.ssh/config.bak`.
 
 ---
-[Agenda](README.md) | Previous: [07 Register key](07-register-key-portal.md) | Next: [09 Advanced topics](09-qa-advanced-topics.md)
+[Agenda](README.md) | Previous: [06 Second key](06-second-key-athena.md) | Next: [08 Advanced topics](08-qa-advanced-topics.md)

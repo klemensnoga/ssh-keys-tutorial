@@ -5,12 +5,11 @@
 ## Exercise overview
 
 1. Generate a key pair with an elliptic-curve algorithm (Ed25519)
-   - **1b.** Copy the public key to Ares (`ssh-copy-id` or `scp`) and log in with it
+   - **1b.** Register the public key in the PLGrid portal (or copy it with `ssh-copy-id` or `scp`) and log in to Ares with it
 2. Prepare a config file for ares.cyfronet.pl using the generated key
 3. Add keep-alive
 4. Start the agent and make it persistent
-5. Use a different key for athena.cyfronet.pl
-6. Add the public keys to your account at portal.plgrid.pl and test
+5. Use a different key for athena.cyfronet.pl, register it in the portal and test
 
 ## Facilitator notes
 
