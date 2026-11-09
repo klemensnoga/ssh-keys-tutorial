@@ -63,5 +63,19 @@ ssh ares               # connect with the alias
 
 A complete ready-to-paste file is in [config.example](ares/config.example).
 
+## How to get tutorial materials on Ares
+
+To get [config.example](ares/config.example) and [handout](ares/handout.pdf) with all necessary commands at Ares supercomputer after logging in run command:
+
+```
+source $PLG_GROUPS_STORAGE/plggtraining/2026A/Toolkit/source_me_tool.sh SSH_Keys
+```
+
+All materials will be copied to your `$SCRATCH` to the directory `$SCRATCH/szkolenia-cyfronet/2026A/Toolkit/SSH_Keys`. It will be accessible via `$MYDIR` environment variable. To get there use:
+
+```
+cd $MYDIR
+```
+
 ---
 [Agenda](README.md) | Previous: [03 Copy public key](03-copy-public-key.md) | Next: [05 SSH agent](05-ssh-agent.md)
